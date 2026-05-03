@@ -18,11 +18,11 @@ export function Dropdown({
 
   return (
     <div
-      className={`relative space-y-1 group **:transition-all **:duration-300 **:ease-in-out`}
+      className={`relative space-y-1  shadow-md hover:shadow-lg rounded-lg `}
     >
       <label
         onClick={() => setDrop(!drop)}
-        className={`${value ? `border-green-400 text-black` : `border-gray-300 text-gray-500`} px-5 py-3 border block rounded-lg `}
+        className={`${value ? `border-green-400 text-black` : `border-gray-300 text-gray-500`} px-5 py-3 border block rounded-lg  cursor-pointer`}
       >
         {value || placeholder}
       </label>

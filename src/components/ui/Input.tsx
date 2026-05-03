@@ -6,9 +6,7 @@ export function Input({
   onChange: (val: string) => void;
 }) {
   return (
-    <div
-      className={`relative **:transition-all **:duration-300 **:ease-in-out`}
-    >
+    <div className={`relative  rounded-lg shadow-md hover:shadow-lg`}>
       <input
         required
         value={value}

@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { RiUploadCloud2Line } from "react-icons/ri";
+
 export function UploadImage({
   value,
   onChange,
@@ -74,11 +76,7 @@ export function UploadImage({
         relative h-48 rounded-lg border bg-white flex justify-center items-center shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out`}
       >
         <div className='absolute flex flex-col items-center'>
-          <img
-            alt='File Icon'
-            className='mb-3'
-            src='https://img.icons8.com/dusk/64/000000/file.png'
-          />
+          <RiUploadCloud2Line className={` text-6xl text-gray-500`} />{" "}
           <span className='block text-gray-500 font-semibold'>
             Drag & drop your files here
           </span>
